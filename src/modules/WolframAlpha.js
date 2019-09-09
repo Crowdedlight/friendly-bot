@@ -49,7 +49,7 @@ class WolframAlpha extends Module {
 
                     //check for success
                     if (!data.queryresult.success) {
-                        msg = "Couldn't understand the input."
+                        embed.addField("ERROR", "Couldn't understand the input.");
                     } else {
                         //Correct input, can parse output
                         var subAnswers = data.queryresult.pods;
